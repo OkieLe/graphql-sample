@@ -1,0 +1,41 @@
+build:
+  version: 0.0.1
+
+data:
+  db:
+    initData: /init/db_init_v1.json
+
+server:
+  address: localhost
+  port: 8080
+
+spring:
+  profiles:
+    active: dev
+  data:
+    mongodb:
+      database: graphql
+      host: localhost
+      port: 27017
+      username: graphql
+      password: backend
+
+graphql:
+  servlet:
+    mapping: /graphql
+    enabled: true
+    corsEnabled: true
+
+graphiql:
+  mapping: /graphiql
+  endpoint:
+    graphql: /graphql
+    subscriptions: /subscriptions
+  static:
+    basePath: /
+  enabled: true
+  pageTitle: GraphiQL
+
+logging:
+  level: error
+  level.org.springframework.data: debug

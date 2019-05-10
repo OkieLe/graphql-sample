@@ -1,0 +1,18 @@
+[
+  {
+    "id":"1",
+    "category":"default"
+  },
+  {
+    "id":"2",
+    "category":"os"
+  },
+  {
+    "id":"3",
+    "category":"work"
+  },
+  {
+    "id":"4",
+    "category":"personal"
+  }
+]
